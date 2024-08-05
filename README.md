@@ -14,7 +14,7 @@ By: Crista Barnes and Rami Knio
    
 3. Run Enriching_the_Dataset_with_OSMNX.ipynb
 
-   *The notebook takes finalcsv and adds data from the Open Street Map package https://wiki.openstreetmap.org/wiki/Main_Page. It cleans the OSM data and calculates distances from each house to each point attraction and the edge of each park. It also creates a feature that adds all the areas of every park under 1km from each house*
+   *The notebook takes finalcsv and adds data from the Open Street Map package https://wiki.openstreetmap.org/wiki/Main_Page. It cleans the OSM data and calculates distances from each house to each point attraction and the edge of each park. It also creates a feature for all the areas of every park under 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.25, and 2.5 km from each house and a crosses highway variable to determine if one needs to cross a highway to get to the largest park in all the above listed thresholds*
 
    *Output of notebook: refined_data_sample_distancetesting.csv*
 
@@ -46,3 +46,4 @@ By: Crista Barnes and Rami Knio
 8. Large_Park_Exploration.ipynb - this notebook provides visualization of the park dataset to validate cleaning operations that are carried out in Enriching_the_Dataset_with_OSMNX
 9. More_Threshold_Testing.ipynb - this notebook is a follow up to Exploring_Location_Options.ipynb, where we confirm that 50 was our best threshold for target encoding
 10. Distance_Threshold_Testing.ipynb - this notebook was used to determine our best threshold for greenspace area and crosses_highway, which turned out to be 2.5 km
+11. Parks_and_Highways.ipynb - this notebook provides visualization and foundation of the code to get the Crosses_Highway variable available in Enriching_the_Dataset_with_OSMNX
